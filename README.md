@@ -28,7 +28,7 @@ Alternately, you can do `sudo bpkg-install pepa65/tldr` if you have
 <img alt="tldr list screenshot" src="tldr-list.jpg" title="tldr list" width="600" />
 
 ### Prerequisites
-coreutils, less, grep, unzip, curl / wget
+coreutils, less, grep, unzip, curl | wget
 
 <img alt="tldr usage screenshot" src="tldr-usage.jpg" title="tldr usage" width="600" />
 
