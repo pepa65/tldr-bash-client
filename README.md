@@ -1,5 +1,5 @@
+## The main repo is now on Gitlab: https://gitlab.com/pepa65/tldr-bash-client !!
 # tldr-bash-client
-**The main repo is now on Gitlab: https://gitlab.com/pepa65/tldr-bash-client**
 * version 0.39
 
 ### Bash client for tldr: community driven man-by-example
