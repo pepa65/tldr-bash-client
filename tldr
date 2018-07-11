@@ -380,7 +380,7 @@ Cache_fill(){
 		Err "Could not download pages archive from $U$zip_url$XU with $dl"
 		exit 8
 	}
-	$unzip "$tmp/pages.zip" -d "$tmp" 'pages/*' || {
+	$unzip "$tmp/pages.zip" -d "$tmp" 'pages/**' || {
 		rm -- "$tmp"
 		Err "Couldn't unzip the cache archive on $tmp/pages.zip"
 		exit 9
