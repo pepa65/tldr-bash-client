@@ -1,3 +1,4 @@
+## The main repo is now on Gitlab: https://gitlab.com/pepa65/tldr-bash-client !!
 # tldr-bash-client
 
 * version 0.44
