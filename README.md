@@ -1,6 +1,7 @@
 ## The main repo is now on Gitlab: https://gitlab.com/pepa65/tldr-bash-client !!
 # tldr-bash-client
-* version 0.39
+
+* version 0.44
 
 ### Bash client for tldr: community driven man-by-example
 **A fully-functional [bash](https://tiswww.case.edu/php/chet/bash/bashtop.html)
@@ -28,7 +29,7 @@ If the location is not in $PATH, you need to specify the path to run it.
 ### Prerequisites
 coreutils, grep, unzip, curl / wget, less (optional)
 
-<img alt="tldr find screenshot" src="tldr-find.jpg" title="tldr find" width="600" />
+<img alt="tldr search screenshot" src="tldr-search.jpg" title="tldr search" width="600" />
 
 ## Output customisation
 <img alt="tldr customize screenshot" src="tldr-customize.jpg" title="tldr customize" width="600" />
@@ -64,13 +65,15 @@ Color/BG (Newline and Space also allowed) for error and info messages
 * TLDR_INFO_COLOR (defaults to: Newline Space Green)
 
 How many days before freshly downloading a potentially stale page
-* TLDR_EXPIRY (defaults to: 60)
-
+* TLDR_EXPIRY (defaults to 7)
 Alternative location of pages cache
 * TLDR_CACHE (not set by default)
-
-Instead of `less`, use `cat` for output (automatic if less not available)
-* TLDR_LESS (not set by default; if set to *0* `cat` will be used)
+Usage of 'less' or 'cat' for output (set to '0' for cat)
+* TLDR_LESS (*1* by default; if set to *0* `cat` will be used)
+Force current OS
+* TLDR_OS (overrides what is read by `uname -s`)
+Force preferred language: ISO639 format (2 lowercase letters)
+* TLDR_LANG (not set by default, $LANG is used from environment)
 
 <img alt="tldr list screenshot" src="tldr-list.jpg" title="tldr list" width="600" />
 
@@ -108,7 +111,7 @@ coreutils, sed, grep, find
 Please file an issue for a question, a bug or a feature request.
 Or even better, send a pull request!
 
-[tldr-bash-client github page](http://github.com/pepa65/tldr-bash-client "github.com/pepa65/tldr-bash-client")
+[tldr-bash-client gitlab page](http://gitlab.com/pepa65/tldr-bash-client "gitlab.com/pepa65/tldr-bash-client")
 
 ### License
 

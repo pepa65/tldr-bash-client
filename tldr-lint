@@ -7,7 +7,7 @@ version='0.13'
 # Old syntax files $f can be changed into new syntax files by:
 #  sed -i -e "1s/^# //" -e 's/^- //' -e 's/^`\(.*\)`$/    \1/' "$f"
 #  e=$(sed '1s/./=/g;q' "$f") sed -i "2i$e" "$f"
-# Part of http://github.com/pepa65/tldr-bash-client
+# Part of http://gitlab.com/pepa65/tldr-bash-client
 # Requirements: coreutils sed grep find
 
 Help(){  # $1: optional message
