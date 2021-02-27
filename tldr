@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set +vx -o pipefail
 [[ $- = *i* ]] && echo "Don't source this script!" && return 1
-version='0.47'
-# tldr-bash-client version 0.44
+version='0.48'
+# tldr-bash-client version 0.48
 # Bash client for tldr: community driven man-by-example
 # - forked from Ray Lee, https://github.com/raylee/tldr
 # - modified and expanded by pepa65: https://gitlab.com/pepa65/tldr-bash-client
@@ -205,7 +205,7 @@ Config(){
 	Init_term
 	[[ $TLDR_LESS = 0 ]] &&
 		trap 'cat <<<"$stdout"' EXIT ||
-		trap 'less -~RXQFP"Browse up/down, press Q to exit " <<<"$stdout"' EXIT
+		trap 'less -Gg -~RXQFP"Browse up/down, press Q to exit " <<<"$stdout"' EXIT
 
 	ver="tldr-bash-client version $version$XB  ${URL}https://gitlab.com/pepa65/tldr-bash-client$XURL"
 
@@ -357,7 +357,7 @@ Display_tldr(){
 	done <"$1"
 	[[ $TLDR_LESS = 0 ]] && 
 		trap 'cat <<<"$stdout"' EXIT ||
-		trap 'less +Gg -~RXQFP"%pB\% tldr $I$page$XI - browse up/down, press Q to exit" <<<"$stdout"' EXIT
+		trap 'less -Gg -~RXQFP"%pB\% tldr $I$page$XI - browse up/down, press Q to exit" <<<"$stdout"' EXIT
 }
 
 # $1: exit code; Uses: platform index
